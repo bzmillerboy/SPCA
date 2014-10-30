@@ -1,0 +1,4 @@
+/bower_components
+/config/config.php
+/node_modules
+.htaccess

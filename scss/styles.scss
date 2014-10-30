@@ -1,0 +1,299 @@
+@import "variables";
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "font-awesome/scss/font-awesome";
+@import "bootstrap-custom";
+@import "slippry";
+@import "bootstrapValidator";
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+h1, .h1 { font-size: $font-size-h1 - 10px; }
+h2, .h2 { font-size: $font-size-h2 - 3px; }
+h3, .h3 { font-size: $font-size-h3 - 3px; }
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+iframe {
+  width: 100%;
+}
+
+a.plain-link {
+  color: $text-color;
+}
+a.plain-link:hover {
+  color: darken($text-color, 35%);;
+}
+.img-wrap {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+ul.plain-list {
+  list-style: none;
+  padding-left:0;
+  li {
+    padding: 3px 0;
+  }
+}
+
+section, footer {
+  padding:60px 0;
+}
+
+.col-md-9 {
+  margin-bottom: 40px;
+}
+
+.content {
+  margin-top: -136px;
+
+  .page-title {
+    background-color:white;
+    padding:15px 25px;
+    float: left;
+  }
+}
+
+.sidebar-nav {margin-top: 40px;}
+
+.header-section {
+  height: 100%;
+  padding-top: 0px;
+  padding-bottom: 100px;
+  background-image: -webkit-radial-gradient(circle at 69% 31%, rgba(175, 189, 186, 0.843137) 4%, rgb(111, 125, 122)), url(/images/dog-bg.jpg);
+  background-image: -o-radial-gradient(circle at 69% 31%, rgba(175, 189, 186, 0.843137) 4%, rgb(111, 125, 122)), url(/images/dog-bg.jpg);
+  background-image: radial-gradient(circle at 69% 31%, rgba(175, 189, 186, 0.843137) 4%, rgb(111, 125, 122)), url(/images/dog-bg.jpg);
+  background-position: 0% 0%, 50% 50%, 50% 50%, 22% 50%;
+  background-size: auto, cover, cover, cover;
+  background-attachment: scroll, fixed, scroll, scroll;
+  text-align: left;
+  text-shadow: none;
+}
+
+// orig -webkit-radial-gradient(circle at 69% 31%, rgba(194, 190, 179, 0.74), rgba(82, 76, 62, 0.84))
+// -o-radial-gradient(circle at 69% 31%, rgba(194, 190, 179, 0.74), rgba(82, 76, 62, 0.84))
+// radial-gradient(circle at 69% 31%, rgba(194, 190, 179, 0.74), rgba(82, 76, 62, 0.84))
+
+.main-nav {
+  background-color: whitesmoke;
+}
+.logo {
+  padding:15px;
+  height: 90px;
+}
+
+.give-section {
+  background-color: rgba(0, 0, 0, 0.18);
+  color:#fff;
+}
+
+.hero {
+  color:#fff;
+  margin-top: 50px;
+  margin-bottom:0px;
+  text-align: center;
+
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.sy-slides-wrap {
+  min-height: 400px;
+}
+.sy-controls {
+  display: none !important;
+}
+.sy-pager li.sy-active a {
+  background-color: $link-color !important;
+}
+
+.about-section {
+  position: relative;
+  padding-bottom: 0px;
+  background-image: -webkit-linear-gradient(135deg, rgba(168, 37, 37, 0.72), rgba(0, 0, 0, 0.67)), url(/images/about-bg.jpg);
+  background-image: -o-linear-gradient(45deg, rgba(168, 37, 37, 0.72), rgba(0, 0, 0, 0.67)), url(/images/about-bg.jpg);
+  background-image: linear-gradient(45deg, rgba(168, 37, 37, 0.72), rgba(0, 0, 0, 0.67)), url(/images/about-bg.jpg);
+  background-position: 0% 0%, 0% 8%;
+  background-attachment: scroll, fixed;
+  color: #fff;
+  .about-content {
+    padding-bottom:30px;
+  }
+  p {
+    text-shadow: 0px 0px 40px rgba(0,0,0,1);
+  }
+}
+
+.newsletter-section {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.68);
+  text-shadow: none;
+
+  input {
+    background-color: rgba(112, 112, 112, 0.34);
+    border: 1px solid #cccccc;
+    color: whitesmoke;
+  }
+}
+
+.news-section {
+  background-color:whitesmoke;
+  a {
+    color:$text-color;
+  }
+  a:hover {
+    color: darken($text-color, 35%);
+  }
+  h3 {
+    font-weight:normal;
+    margin-bottom: 0px;
+    margin-top: 7px;
+  }
+  ul {
+    list-style: none;
+    padding-left:0;
+  }
+  ul > li {
+    padding: 4px 0;
+  }
+  .news-list {
+    margin-bottom: 30px;
+  }
+}
+
+.footer-section .footer-bottom {
+  text-align: center;
+}
+.copyright {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.event-overview {
+  .icon {
+    float: left;
+    width: 60px;
+    height: 60px;
+    color: #bbbac0;
+    font-size: 24px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #bbbac0;
+    margin-bottom: 20px;
+  }
+  .info {
+    padding: 0 0 0 65px;
+    h5 {margin-bottom:0px;}
+  }
+}
+.event-details {
+
+  .ticket-info {
+    margin-top: 23px;
+  }
+}
+
+.dog-book-panel {
+  background-image: url(/images/book-mock-dog.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  padding: 15px 10px 10px 10px;
+  height: 150px;
+  h4 {
+    font-size: 14px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+.dog-book-panel:hover {
+  opacity: .9;
+  color: whitesmoke;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+  .hero {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .hero-title {
+      margin-bottom: 50px;
+      text-align:left;
+      text-shadow: 0px 0px 20px rgba(0,0,0,.2);
+      font-size: 46px;
+    }
+  }
+  .footer-section .footer-bottom {
+    text-align: left;
+  }
+  .copyright {
+    text-align:right;
+  }
+  .dog-book-panel {
+    height: 280px;
+    padding: 35px 10px 10px 15px;
+    h4 {
+      font-size: 26px;
+    }
+  }
+}/*small devices*/
+
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {  }
+
+
+@media (min-width: $screen-md-min) {
+  .main-nav {
+    .navbar-nav {
+      float: right;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+     }
+     .dropdown-menu {
+      border-radius: 0px;
+      border: none;
+      padding:0px;
+    }
+    .dropdown-menu > li > a {
+      padding: 10px 20px;
+    }
+     .navbar {
+      border:none;
+    }
+  }
+}
+
+@media (max-width: $screen-md-min) {
+  .navbar-collapse {
+    background-color: $brand-white;
+  }
+}
+

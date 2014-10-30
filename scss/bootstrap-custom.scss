@@ -1,0 +1,14 @@
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+.btn-default-inverse {
+  @include button-variant($btn-default-inverse-color, $btn-default-inverse-bg, $btn-default-inverse-border);
+}
+
+
+.btn {
+  border-top-width: 2px;
+  border-left-width: 2px;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
