@@ -27,10 +27,6 @@
   </div><!--/hero -->
 </section><!--/header-section-->
 
-
-
-
-
 <section class="slider-section">
   <ul id="slider">
     <li>
